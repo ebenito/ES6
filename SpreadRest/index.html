@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operador Spread / Rest (...)
+    </title>
+</head>
+<body>
+    <h1>Operador Spread / Rest (...)</h1>
+    <pre>
+        El operador (...) se denomina operador Spread o Rest,
+        dependiendo de cómo y dónde se utilice.
+    </pre>
+    
+    <h2>Spread</h2>
+    <pre>
+        Cuando se usa con cualquier iterable (como un
+        array u objeto), actúa como "spread",
+        introduciendo individualmente cada uno de sus
+        elementos en la función
+
+        let Pokemon = ["Pikachu", 35, 55, 40, 90];
+        console.log(...Pokemon);
+            Resultado: Pikachu 35 55 40 90
+    </pre>
+
+    
+    <h2>Rest</h2>
+    <pre>
+        El otro uso común de ... es unir una serie de
+        valores en una array. En este caso, el
+        operador se denomina "rest".
+
+        let Pokemon = ["Pikachu", 35, 55, 40, 90]
+        console.log(...Pokemon)
+    </pre>
+
+    <script src="main.js" />
+</body>
+</html>
