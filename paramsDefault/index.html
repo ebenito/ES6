@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parámetros con Valor por Defecto.</title>    
+</head>
+<body>
+    <h1>Parámetros con Valor por Defecto.</h1>   
+    <pre>    En ES6 podemos establecer parámetros por defecto, es decir, un
+    parámetro opcional en nuestra función que tendrá un valor
+    predefinido.
+
+      let getPrecioFinal = (precio, impuesto = 0.7) => precio + precio * impuesto;
+
+      getPrecioFinal(500); // 850
+    </pre>
+    
+
+    <h2>RETO : Tu nombre robot</h2>
+    <form id="form">
+        <p>Escribe tu nombre:</p>
+        <input id="nombre" type="text" value=""/>
+        <button type="button" onclick="GeneraNombreRobot()">Envíar</button>
+        <span id="result" />
+    </form>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
