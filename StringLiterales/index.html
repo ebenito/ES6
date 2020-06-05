@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings Literales</title>    
+</head>
+<body>
+    <h1>Extensiones de Objetos Literales</h1>   
+    <pre>    
+        ES6 introduce una forma más fácil de agregar la
+        interpolación analizada
+        automáticamente.
+
+        `soy un string ` Contra-aspa (o tilde) se utiliza 
+        como delimitador.
+
+        `$ {nombreVariable} ` utilizado para renderizar
+        las variables.
+
+
+        let user = 'Kevin';
+        console.log (`Hola ${user}!`); // Hola Kevin!
+    </pre>
+
+    <h2>RETO : Número primo</h2>
+    <form id="form">
+        <p>Escribe tu nombre:</p>
+        <input id="nombre" type="text" value=""/>
+        <p>Número a comprobar:</p>
+        <input id="numero" type="number" value=""/>
+        <button type="button" onclick="ConsultaSiEsPrimo()">Envíar</button>
+
+        <span id="result" />
+    </form>
+
+    <script src="main.js"></script>
+</body>
+</html>

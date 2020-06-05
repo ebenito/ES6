@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for of | for in</title>    
+</head>
+<body>
+    <h1>for of</h1>   
+    <pre>    
+        Itera en objetos iterables, tipo arrays.
+
+        let apellidos = [ 'pérez', 'garcía', 'gómez'];
+        for (let setname of apellidos) {
+            console.log(setname);
+        }
+    </pre>
+
+    <h1>for in</h1>   
+    <pre>    
+        Itera sobre todas las propiedades enumerables
+        del objeto, dando el valor de la clave
+        de objeto a nuestra variable.
+
+        let apellidos = ['perez', 'garcia', 'gomez'];
+        for (let index in apellidos) {
+            console.log('apellidos[' + index + '] = ' + apellidos[index]);
+        }
+    </pre>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
