@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POO</title>    
+</head>
+<body>
+    <h1>POO</h1>   
+    <pre>    
+        La programación orientada a objetos es un paradigma de programación, una manera de programar
+        específica, donde se organiza el código en unidades denominadas clases, de las cuales se crean los
+        objetos que se relacionan entre sí para crear el comportamiento de la web.
+
+        En ES6 mejora la sintaxis de los prototype y usando los clásicos class popularmente aceptados en
+        el resto de lenguajes populares con POO (Programación Orientada a Objetos).
+    </pre>
+
+    <h2>Sintaxis de Clase</h2>   
+    <pre>    
+        class Tarea {
+            constructor(texto, id) {
+                console.log('tarea instanciada! con el texto:', texto);
+                this.texto = texto;
+                this.id = id;
+                this.fecha = new Date();
+            }
+            fechaHoy() {
+                this.fecha = new Date();
+            }
+        }
+
+        let tarea = new Tarea('comprar leche', 1); // "tarea instanciada!"
+        console.log(typeof tarea); // object
+        console.log(tarea);  // Tarea { texto: 'comprar leche', id: 1, fecha:{} }
+    </pre>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
