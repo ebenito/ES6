@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herencia</title>    
+</head>
+<body>
+    <h1>Herencia (extends y super)</h1>   
+    <pre>    
+        El uso de <b>extends</b> permite que las clases hijas hereden de la clase principal en ES6.
+        Es importante notar que el constructor derivado debe invocar utilizando <i>super()</i>.
+        Puedes llamar al método de la clase primaria en la clase hija usando <i>super.nombreDelMetodoPadre()</i>
+    </pre>
+
+    <h2>Ejemplo</h2>   
+    <pre>    
+        class Rectangle {
+            constructor(height, width) {
+                this.name = "Rectangle";
+                this.height = height;
+                this.width = width;
+            }
+
+            sayName() {
+                console.log("Hi, I am a ", this.name + ".");
+            }
+
+            get area() {
+                return this.height * this.width;
+            }
+
+            set area(value) {
+                this.height = this.width = Math.sqrt(value);
+            }
+        }
+          
+        class Square extends Rectangle {
+            constructor(length) {
+                super(length, length);
+                this.name = "Square";
+            }
+        }       
+    </pre>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
